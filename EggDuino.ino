@@ -27,23 +27,23 @@
 
 #define initSting "EBBv13_and_above Protocol emulated by Eggduino-Firmware V1.6a"
 //Rotational Stepper:
-#define step1 2
-#define dir1 5
-#define enableRotMotor 8
+#define step1 A3 //2 //Changed Pinout for MPCNC Nano Estlcam Shield X-Axis STEP
+#define dir1 A0 //5 //Changed Pinout for MPCNC Nano Estlcam Shield X-Axis DIR
+#define enableRotMotor 0 //8 //Changed Pinout for MPCNC Nano Estlcam Shield 
 #define rotMicrostep 16  //MicrostepMode, only 1,2,4,8,16 allowed, because of Integer-Math in this Sketch
 //Pen Stepper:
-#define step2 3
-#define dir2 6
-#define enablePenMotor 8
+#define step2 A4 //3 //Changed Pinout for MPCNC Nano Estlcam Shield Y-Axis STEP
+#define dir2 A1 //6 //Changed Pinout for MPCNC Nano Estlcam Shield Y-Axis DIR
+#define enablePenMotor 0 //8 //Changed Pinout for MPCNC Nano Estlcam Shield 
 #define penMicrostep 16 //MicrostepMode, only 1,2,4,8,16 allowed, because of Integer-Math in this Sketch
 
-#define servoPin 4 //Servo
+#define servoPin 5 //4 //Servo //Changed Pinout for MPCNC Nano Estlcam Shield SPINDLE RPM (PWM) Signal
 
 // EXTRAFEATURES - UNCOMMENT TO USE THEM -------------------------------------------------------------------
 
-// #define prgButton 2 // PRG button
-// #define penToggleButton 12 // pen up/down button
-// #define motorsButton 4 // motors enable button
+// #define prgButton 8 //2 // PRG button //Changed Pinout for MPCNC Nano Estlcam Shield IN1
+// #define penToggleButton 9 //12 // pen up/down button //Changed Pinout for MPCNC Nano Estlcam Shield IN2 
+// #define motorsButton 4 // motors enable button // Not available on MPCNC Nano Estlcam Shield. ENABLE is always pulled high (Motors always on)
 
 //-----------------------------------------------------------------------------------------------------------
 
